@@ -1,7 +1,3 @@
-<script setup lang="ts">
-import { ref } from 'vue'
-</script>
-
 <template>
   <div
     class="flex flex-col items-center justify-center relative min-h-screen bg-gray-100 dark:bg-gray-900"
@@ -14,10 +10,11 @@ import { ref } from 'vue'
 
       <form class="mt-6" autocomplete="off">
         <div>
-          <label for="username" class="block text-sm text-gray-800 dark:text-gray-200">Логин</label>
+          <label for="email" class="block text-sm text-gray-800 dark:text-gray-200">E-mail</label>
           <input
+            v-model="email"
             type="text"
-						id="username"
+            id="email"
             class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
           />
         </div>
@@ -35,15 +32,17 @@ import { ref } from 'vue'
           </div>
 
           <input
+            v-model="password"
             type="password"
-						id="password"
-						autocomplete="off"
+            id="password"
+            autocomplete="off"
             class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
           />
         </div>
 
         <div class="mt-6">
           <button
+            @click.prevent="login"
             class="w-full px-6 py-2.5 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-gray-800 rounded-lg hover:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-50 cursor-pointer"
           >
             Войти
@@ -63,7 +62,55 @@ import { ref } from 'vue'
   </div>
 </template>
 
-<script>
+<script setup lang="ts">
+import { ref } from 'vue'
+import axios from 'axios'
+import { useUserStore } from '@/stores/user'
 
+const userStore = useUserStore()
 
+const email = ref('username232@gmail.com')
+const password = ref('Kilmonger73132pass')
+
+const errors = ref([])
+
+async function login() {
+  errors.value = []
+
+  if (email.value === '') {
+    errors.value.push('E-mail не введен!')
+  }
+
+  if (password.value === '') {
+    errors.value.push('Пароль не введен!')
+  }
+
+  if (errors.value.length === 0) {
+    await axios
+      .post('/api/v1/account/login/', { email: email.value, password: password.value })
+      .then((response) => {
+        userStore.setToken(response.data)
+
+        console.log(response.data.access)
+
+        axios.defaults.headers.common["Authorization"] = "Bearer " + response.data.access;
+      })
+      .catch((error) => {
+        console.log('error', error)
+      })
+
+    await axios
+      .get('/api/v1/account/me/')
+      .then((response) => {
+        userStore.setUserInfo(response.data)
+
+        //$router.push('/feed')
+      })
+      .catch((error) => {
+        console.log('error', error)
+      })
+  }
+
+  console.log(errors)
+}
 </script>
