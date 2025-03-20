@@ -40,11 +40,14 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from, next) => {
-  if (false) {
-    next("login");
-  } else {
-    next();
+  const pathSafe: (string | undefined | number)[] = ['login', 'home', 'signup'];
+  if (pathSafe.find(to.name)!=-1) {
+    next()
+    return
   }
+  console.log(useUserStore().user.isAuthenticated)
+  if (!useUserStore().user.isAuthenticated) next({name:'login'})
+    else next()
 });
 
 export default router
