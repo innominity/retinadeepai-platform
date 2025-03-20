@@ -69,8 +69,8 @@ import { useUserStore } from '@/stores/user'
 
 const userStore = useUserStore()
 
-const email = ref('username232@gmail.com')
-const password = ref('Kilmonger73132pass')
+const email = ref('username2@gmail.com')
+const password = ref('Kilmonger731pass')
 
 const errors = ref([])
 
