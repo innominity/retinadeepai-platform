@@ -1,11 +1,14 @@
 <script setup lang="ts">
+import { onMounted } from 'vue'
+
 import { RouterLink, RouterView } from 'vue-router'
 import axios from 'axios'
 import { useUserStore } from '@/stores/user'
 
 const userStore = useUserStore()
 
-function onMounted() {
+
+onMounted(() => {
   userStore.initStore()
 
   const token = userStore.user.access
@@ -15,7 +18,7 @@ function onMounted() {
   } else {
       axios.defaults.headers.common["Authorization"] = "";
   }
-}
+})
 
 </script>
 

@@ -66,6 +66,7 @@
 import { ref } from 'vue'
 import axios from 'axios'
 import { useUserStore } from '@/stores/user'
+import router from '@/router'
 
 const userStore = useUserStore()
 
@@ -90,9 +91,6 @@ async function login() {
       .post('/api/v1/account/login/', { email: email.value, password: password.value })
       .then((response) => {
         userStore.setToken(response.data)
-
-        console.log(response.data.access)
-
         axios.defaults.headers.common["Authorization"] = "Bearer " + response.data.access;
       })
       .catch((error) => {
@@ -104,7 +102,7 @@ async function login() {
       .then((response) => {
         userStore.setUserInfo(response.data)
 
-        //$router.push('/feed')
+        router.push({ name: 'main' })
       })
       .catch((error) => {
         console.log('error', error)

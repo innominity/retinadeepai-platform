@@ -22,11 +22,7 @@ export const useUserStore = defineStore('user', () => {
 
 
   function initStore() {
-    console.log('initStore', localStorage.getItem('user.access'))
-
     if (localStorage.getItem('user.access')) {
-      console.log('User has access!')
-
       user.value.access = localStorage.getItem('user.access')
       user.value.refresh = localStorage.getItem('user.refresh')
       user.value.id = localStorage.getItem('user.id')
@@ -34,26 +30,19 @@ export const useUserStore = defineStore('user', () => {
       user.value.isAuthenticated = true
 
       refreshToken()
-
-      console.log('Initialized user:', user)
     }
   }
 
   function setToken(data: any) {
-    console.log('setToken', data)
-
     user.value.access = data.access
     user.value.refresh = data.refresh
     user.value.isAuthenticated = true
 
     localStorage.setItem('user.access', data.access)
     localStorage.setItem('user.refresh', data.refresh)
-
-    console.log('user.access: ', localStorage.getItem('user.access'))
   }
 
   function removeToken() {
-    console.log('removeToken')
     user.value.isAuthenticated = false
     user.value.refresh = null
     user.value.access = null
@@ -67,16 +56,12 @@ export const useUserStore = defineStore('user', () => {
   }
 
   function setUserInfo(user: any) {
-    console.log('setUserInfo', user)
-
     user.id = user.id
     user.email = user.email
 
     localStorage.setItem('user.id', user.id)
     localStorage.setItem('user.name', user.name)
     localStorage.setItem('user.email', user.email)
-
-    console.log('User', user)
   }
 
   function refreshToken() {

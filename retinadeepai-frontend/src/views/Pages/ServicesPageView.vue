@@ -37,7 +37,7 @@
 
               <span class="mx-1 text-gray-500"> / </span>
 
-              <a href="#" class="text-indigo-600 hover:underline"> Главная </a>
+              <a href="#" class="text-indigo-600 hover:underline"> Сервисы и модели </a>
             </div>
           </div>
 
@@ -50,7 +50,6 @@
 </template>
 
 <script setup lang="ts">
-
 import { ref } from 'vue'
 import axios from 'axios'
 import { useUserStore } from '@/stores/user'

@@ -14,7 +14,7 @@ import { ref } from 'vue'
 
       <form class="mt-6" autocomplete="off">
         <div>
-          <label for="username" class="block text-sm text-gray-800 dark:text-gray-200">Логин</label>
+          <label for="username" class="block text-sm text-gray-800 dark:text-gray-200">Email</label>
           <input
             type="text"
 						id="username"
