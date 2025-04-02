@@ -1,0 +1,20 @@
+[
+    {
+        "model": "retina_analysis.retinaimagecroptype",
+        "pk": 1,
+        "fields": {
+          "title": "Горизонтальная проекция сетчатки",
+          "label": "retina_horizontal",
+          "description": ""
+        }
+    },
+    {
+        "model": "retina_analysis.retinaimagecroptype",
+        "pk": 2,
+        "fields": {
+            "title": "Снимок глазного дна",
+            "label": "retina_fundus",
+            "description": ""
+        }
+    }
+]

@@ -1,0 +1,1232 @@
+[
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 1,
+        "fields": {
+            "label": "koger_mak_square_1",
+            "name": "Сетчатка в макулярной области без видимой патологии",
+            "sort_index": 1,
+            "group": 1
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 2,
+        "fields": {
+            "label": "koger_mak_square_2",
+            "name": "Недостаточная прозрачность оптических сред для достоверной оценки изменений в структуре сетчатки",
+            "sort_index": 2,
+            "group": 1
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 3,
+        "fields": {
+            "label": "koger_mak_square_3",
+            "name": "Сканирование затруднено вследствие отсутствия фиксации взора",
+            "sort_index": 3,
+            "group": 1
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 4,
+        "fields": {
+            "label": "koger_mak_square_4",
+            "name": "Отмечается грубое нарушение архитектоники сетчатки",
+            "sort_index": 4,
+            "group": 1
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 5,
+        "fields": {
+            "label": "koger_mak_square_5",
+            "name": "Слои сетчатки не дифференцируются",
+            "sort_index": 5,
+            "group": 1
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 6,
+        "fields": {
+            "label": "koger_mak_fovea_1",
+            "name": "Наблюдается полная ЗОСТ",
+            "sort_index": 1,
+            "group": 2
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 7,
+        "fields": {
+            "label": "koger_mak_fovea_2",
+            "name": "Наблюдается полная ЗОСТ с «крышечкой» (участок ткани сетчатки из фовеа)",
+            "sort_index": 2,
+            "group": 2
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 8,
+        "fields": {
+            "label": "koger_mak_fovea_3",
+            "name": "Наблюдается неполная отслойка ЗГМ с адгезией в макуле",
+            "sort_index": 3,
+            "group": 2
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 9,
+        "fields": {
+            "label": "koger_mak_fovea_4",
+            "name": "Наблюдается неполная отслойка ЗГМ с адгезией в фовеа",
+            "sort_index": 4,
+            "group": 2
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 10,
+        "fields": {
+            "label": "koger_mak_fovea_5",
+            "name": "К сетчатке в макуле фиксированы тонкие нити",
+            "sort_index": 5,
+            "group": 2
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 11,
+        "fields": {
+            "label": "koger_mak_fovea_6",
+            "name": "К сетчатке в макуле фиксированы шварты",
+            "sort_index": 6,
+            "group": 2
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 12,
+        "fields": {
+            "label": "koger_mak_fovea_7",
+            "name": "К сетчатке в макуле фиксированы тонкие нити, тракционный синдром отсутствует",
+            "sort_index": 7,
+            "group": 2
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 13,
+        "fields": {
+            "label": "koger_mak_fovea_8",
+            "name": "Наблюдается витреомакулярный тракционнный синдром (вертикальные тракции)",
+            "sort_index": 8,
+            "group": 2
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 14,
+        "fields": {
+            "label": "koger_mak_fovea_27",
+            "name": "Наблюдается преретинальная мембрана",
+            "sort_index": 9,
+            "group": 2
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 15,
+        "fields": {
+            "label": "koger_mak_fovea_9",
+            "name": "Наблюдается эпиретинальный фиброз",
+            "sort_index": 10,
+            "group": 2
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 16,
+        "fields": {
+            "label": "koger_mak_fovea_10",
+            "name": "Наблюдается незначительный ЭРФ на периферии макулы (тракции отсутствуют)",
+            "sort_index": 11,
+            "group": 2
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 17,
+        "fields": {
+            "label": "koger_mak_fovea_11",
+            "name": "Профиль сетчатки деформирован за счет тангенциальных горизонтальных тракций (фовеа сглажена)",
+            "sort_index": 12,
+            "group": 2
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 18,
+        "fields": {
+            "label": "koger_mak_fovea_12",
+            "name": "Эпиретинальная мембрана частично отделилась самопроизвольно",
+            "sort_index": 13,
+            "group": 2
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 19,
+        "fields": {
+            "label": "koger_mak_fovea_13",
+            "name": "Профиль сетчатки имеет волнообразную деформацию после пилинга",
+            "sort_index": 14,
+            "group": 2
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 20,
+        "fields": {
+            "label": "koger_mak_fovea_14",
+            "name": "Наблюдаются остатки эпиретинальной мембраны на периферии макулы после пилинга",
+            "sort_index": 15,
+            "group": 2
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 21,
+        "fields": {
+            "label": "koger_mak_fovea_15",
+            "name": "Определяется угроза макулярного разрыва",
+            "sort_index": 16,
+            "group": 2
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 22,
+        "fields": {
+            "label": "koger_mak_fovea_26",
+            "name": "Определяется угроза макулярного разрыва за счет формирования крупных кист в фовеа и парафовеа",
+            "sort_index": 17,
+            "group": 2
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 23,
+        "fields": {
+            "label": "koger_mak_fovea_16",
+            "name": "Определяется макулярный псевдоразрыв",
+            "sort_index": 18,
+            "group": 2
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 24,
+        "fields": {
+            "label": "koger_mak_fovea_17",
+            "name": "Определяется  макулярный ламеллярный разрыв",
+            "sort_index": 19,
+            "group": 2
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 25,
+        "fields": {
+            "label": "koger_mak_fovea_18",
+            "name": "Определяется макулярный разрыв II ст",
+            "sort_index": 20,
+            "group": 2
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 26,
+        "fields": {
+            "label": "koger_mak_fovea_19",
+            "name": "Определяется макулярный разрыв III ст",
+            "sort_index": 21,
+            "group": 2
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 27,
+        "fields": {
+            "label": "koger_mak_fovea_20",
+            "name": "Определяется макулярный разрыв IV ст",
+            "sort_index": 22,
+            "group": 2
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 28,
+        "fields": {
+            "label": "koger_mak_fovea_21",
+            "name": "Наблюдается неполная отслойка ЗГМ с адгезией в парафовеа (d до 3 мм)",
+            "sort_index": 23,
+            "group": 2
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 29,
+        "fields": {
+            "label": "koger_mak_fovea_22",
+            "name": "Наблюдается неполная отслойка ЗГМ с адгезией в парифовеа (d от 3 до 5 мм)",
+            "sort_index": 24,
+            "group": 2
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 30,
+        "fields": {
+            "label": "koger_mak_fovea_23",
+            "name": "Наблюдается эпиретинальный фиброз в фовеа",
+            "sort_index": 25,
+            "group": 2
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 31,
+        "fields": {
+            "label": "koger_mak_fovea_24",
+            "name": "Наблюдается эпиретинальный фиброз в парафовеа",
+            "sort_index": 26,
+            "group": 2
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 32,
+        "fields": {
+            "label": "koger_mak_fovea_25",
+            "name": "Наблюдается эпиретинальный фиброз на переферии макулы",
+            "sort_index": 27,
+            "group": 2
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 33,
+        "fields": {
+            "label": "koger_mak_retina_1",
+            "name": "Фовеа без изменений",
+            "sort_index": 1,
+            "group": 3
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 34,
+        "fields": {
+            "label": "koger_mak_retina_2",
+            "name": "Фовеа сглажена",
+            "sort_index": 2,
+            "group": 3
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 35,
+        "fields": {
+            "label": "koger_mak_retina_3",
+            "name": "Фовеа не дифференцируется по ОКТ",
+            "sort_index": 3,
+            "group": 3
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 36,
+        "fields": {
+            "label": "koger_mak_retina_4",
+            "name": "Профиль макулы правильный",
+            "sort_index": 4,
+            "group": 3
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 37,
+        "fields": {
+            "label": "koger_mak_retina_5",
+            "name": "Контур профиля макулярной зоны уплощен",
+            "sort_index": 5,
+            "group": 3
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 38,
+        "fields": {
+            "label": "koger_mak_retina_6",
+            "name": "Контур профиля макулярной зоны деформирован",
+            "sort_index": 6,
+            "group": 3
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 39,
+        "fields": {
+            "label": "koger_mak_retina_7",
+            "name": "Контур профиля макулярной зоны ассиметричный",
+            "sort_index": 7,
+            "group": 3
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 40,
+        "fields": {
+            "label": "koger_mak_retina_8",
+            "name": "Наблюдается куполообразная макула",
+            "sort_index": 8,
+            "group": 3
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 41,
+        "fields": {
+            "label": "koger_mak_retina_9",
+            "name": "Определяется депрессия слоев сетчатки и хориоидеи (последствия хориоретинита)",
+            "sort_index": 9,
+            "group": 3
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 42,
+        "fields": {
+            "label": "koger_mak_retina_10",
+            "name": "Толщина в норме. Сегментация не нарушена",
+            "sort_index": 1,
+            "group": 4
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 43,
+        "fields": {
+            "label": "koger_mak_retina_11",
+            "name": "Сетчатка в макуле по толщине ниже нормы",
+            "sort_index": 2,
+            "group": 4
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 44,
+        "fields": {
+            "label": "koger_mak_retina_12",
+            "name": "Толщина ганглионарного комплекса в норме",
+            "sort_index": 3,
+            "group": 4
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 45,
+        "fields": {
+            "label": "koger_mak_retina_13",
+            "name": "Толщина ганглионарного комплекса увеличена",
+            "sort_index": 4,
+            "group": 4
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 46,
+        "fields": {
+            "label": "koger_mak_retina_14",
+            "name": "Толщина ганглионарного комплекса уменьшена",
+            "sort_index": 5,
+            "group": 4
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 47,
+        "fields": {
+            "label": "koger_mak_retina_15",
+            "name": "Сетчатка в макуле утолщена умеренно (до 500 мкм)",
+            "sort_index": 6,
+            "group": 4
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 48,
+        "fields": {
+            "label": "koger_mak_retina_16",
+            "name": "Сетчатка в макуле утолщена значительно (свыше 500 мкм)",
+            "sort_index": 7,
+            "group": 4
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 49,
+        "fields": {
+            "label": "koger_mak_retina_17",
+            "name": "Внутренние слои сетчатки  равномерно утолщены, имеют повышенную рефлективность (ОКТ признаки острой ишемии)",
+            "sort_index": 8,
+            "group": 4
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 50,
+        "fields": {
+            "label": "koger_mak_retina_18",
+            "name": "Определяется фокальный интраретинальный отек",
+            "sort_index": 1,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 51,
+        "fields": {
+            "label": "koger_mak_retina_19",
+            "name": "Определяется диффузный интраретинальный отек",
+            "sort_index": 2,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 52,
+        "fields": {
+            "label": "koger_mak_retina_20",
+            "name": "Определяется кистозный интраретинальный отек",
+            "sort_index": 3,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 53,
+        "fields": {
+            "label": "koger_mak_retina_21",
+            "name": "Изменения в виде мелких (до 50 мкм) единичных кист",
+            "sort_index": 4,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 54,
+        "fields": {
+            "label": "koger_mak_retina_22",
+            "name": "Изменения в виде средних (150-200 мкм) единичных кист",
+            "sort_index": 5,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 55,
+        "fields": {
+            "label": "koger_mak_retina_23",
+            "name": "Изменения в виде крупных (150-200 мкм) единичных кист",
+            "sort_index": 6,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 56,
+        "fields": {
+            "label": "koger_mak_retina_24",
+            "name": "Изменения в виде мелких (150-200 мкм) множественных кист",
+            "sort_index": 7,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 57,
+        "fields": {
+            "label": "koger_mak_retina_25",
+            "name": "Изменения в виде средних (150-200 мкм) множественных кист",
+            "sort_index": 8,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 58,
+        "fields": {
+            "label": "koger_mak_retina_26",
+            "name": "Изменения в виде крупных (150-200 мкм) множественных кист",
+            "sort_index": 9,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 59,
+        "fields": {
+            "label": "koger_mak_retina_27",
+            "name": "Определяется кистозная дегенерация сетчатки в макуле",
+            "sort_index": 10,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 60,
+        "fields": {
+            "label": "koger_mak_retina_28",
+            "name": "Сканируются интраретинальные полости неправильной формы с четкими контурами",
+            "sort_index": 11,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 61,
+        "fields": {
+            "label": "koger_mak_retina_29",
+            "name": "Сканируются интраретинальные щелеобразные полости",
+            "sort_index": 12,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 62,
+        "fields": {
+            "label": "koger_mak_retina_30",
+            "name": "Определяется ретиношизис наружных слоев сетчатки",
+            "sort_index": 13,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 63,
+        "fields": {
+            "label": "koger_mak_retina_31",
+            "name": "Определяется ретиношизис внутренних слоев сетчатки",
+            "sort_index": 14,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 64,
+        "fields": {
+            "label": "koger_mak_retina_32",
+            "name": "Сканируются гиперрефлективные фокусы в наружном плексиформном слое сетчатки (твердые экссудаты)",
+            "sort_index": 15,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 65,
+        "fields": {
+            "label": "koger_mak_retina_33",
+            "name": "Сканируются очаги округлой формы повышенной рефлективности с нечеткими контурами (мягкие экссудаты)",
+            "sort_index": 16,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 66,
+        "fields": {
+            "label": "koger_mak_retina_34",
+            "name": "Эллипсоидный слой фоторецепторов не изменен",
+            "sort_index": 17,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 67,
+        "fields": {
+            "label": "koger_mak_retina_35",
+            "name": "Эллипсоидный слой фоторецепторов истончен",
+            "sort_index": 18,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 68,
+        "fields": {
+            "label": "koger_mak_retina_36",
+            "name": "Эллипсоидный слой фоторецепторов частично разрушен",
+            "sort_index": 19,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 69,
+        "fields": {
+            "label": "koger_mak_retina_37",
+            "name": "Определяется отсутствие эллипсоидной зоны в центре макулы",
+            "sort_index": 20,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 70,
+        "fields": {
+            "label": "koger_mak_retina_38",
+            "name": "Определяется отсутствие эллипсоидной зоны в макуле за исключением области фовеа",
+            "sort_index": 21,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 71,
+        "fields": {
+            "label": "koger_mak_retina_39",
+            "name": "Определяется локальный дефект эллипсоидной зоны в проекции фовеа («солнечная» ретинопатия)",
+            "sort_index": 22,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 72,
+        "fields": {
+            "label": "koger_mak_retina_40",
+            "name": "Определяется широкий горизонтальный дефект(ы) эллипсоидной зоны прямоугольной формы в центре макулы",
+            "sort_index": 23,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 73,
+        "fields": {
+            "label": "koger_mak_retina_77",
+            "name": "Определяется множественные окончатые дефект(ы) эллипсоидной зоны (лазеркоагуляты)",
+            "sort_index": 24,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 74,
+        "fields": {
+            "label": "koger_mak_retina_41",
+            "name": "Определяется тубуляция фоторецепторов",
+            "sort_index": 25,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 75,
+        "fields": {
+            "label": "koger_mak_retina_42",
+            "name": "Определяется дезорганизация пигментного эпителия",
+            "sort_index": 26,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 76,
+        "fields": {
+            "label": "koger_mak_retina_78",
+            "name": "ПЭС сохранен",
+            "sort_index": 27,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 77,
+        "fields": {
+            "label": "koger_mak_retina_79",
+            "name": "Определяется атрофия слоя ПЭС (ГАС)",
+            "sort_index": 28,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 78,
+        "fields": {
+            "label": "koger_mak_retina_80",
+            "name": "ПЭС частично разрушен",
+            "sort_index": 29,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 79,
+        "fields": {
+            "label": "koger_mak_retina_43",
+            "name": "Сканируются друзы мелкие (<63 мкм) единичные",
+            "sort_index": 30,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 80,
+        "fields": {
+            "label": "koger_mak_retina_44",
+            "name": "Сканируются друзы мелкие (<63 мкм) множественные",
+            "sort_index": 31,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 81,
+        "fields": {
+            "label": "koger_mak_retina_45",
+            "name": "Сканируются друзы средние (63-124 мкм) единичные",
+            "sort_index": 32,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 82,
+        "fields": {
+            "label": "koger_mak_retina_46",
+            "name": "Сканируются друзы средние (63-124 мкм) множественные",
+            "sort_index": 33,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 83,
+        "fields": {
+            "label": "koger_mak_retina_47",
+            "name": "Сканируются друзы крупные (>125 мкм) единичные",
+            "sort_index": 34,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 84,
+        "fields": {
+            "label": "koger_mak_retina_48",
+            "name": "Сканируются друзы крупные (>125 мкм) множественные",
+            "sort_index": 35,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 85,
+        "fields": {
+            "label": "koger_mak_retina_49",
+            "name": "Сканируются друзы сливные",
+            "sort_index": 36,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 86,
+        "fields": {
+            "label": "koger_mak_retina_50",
+            "name": "Определяется друзеноидная отслойка ПЭС",
+            "sort_index": 37,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 87,
+        "fields": {
+            "label": "koger_mak_retina_51",
+            "name": "Сканируются ретикулярные(псевдодрузы)",
+            "sort_index": 38,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 88,
+        "fields": {
+            "label": "koger_mak_retina_52",
+            "name": "Сканируются кутикулярные друзы",
+            "sort_index": 39,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 89,
+        "fields": {
+            "label": "koger_mak_retina_53",
+            "name": "Сканируется серозная отслойка нейроэпителия",
+            "sort_index": 40,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 90,
+        "fields": {
+            "label": "koger_mak_retina_81",
+            "name": "Сканируется серозная щелевидная отслойка нейроэпителия",
+            "sort_index": 41,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 91,
+        "fields": {
+            "label": "koger_mak_retina_54",
+            "name": "Сканируется серозная отслойка пигментного эпителия сетчатки",
+            "sort_index": 42,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 92,
+        "fields": {
+            "label": "koger_mak_retina_55",
+            "name": "Отслойка ПЭС куполообразная",
+            "sort_index": 43,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 93,
+        "fields": {
+            "label": "koger_mak_retina_56",
+            "name": "Сканируется плоская волнообразная отслойка ПЭС",
+            "sort_index": 44,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 94,
+        "fields": {
+            "label": "koger_mak_retina_82",
+            "name": "Сканируется плоская отслойка ПЭС",
+            "sort_index": 45,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 95,
+        "fields": {
+            "label": "koger_mak_retina_57",
+            "name": "Сканируется table-образная отслойка ПЭС",
+            "sort_index": 46,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 96,
+        "fields": {
+            "label": "koger_mak_retina_58",
+            "name": "Сканируется геморрагическая отслойка ПЭ сетчатки",
+            "sort_index": 47,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 97,
+        "fields": {
+            "label": "koger_mak_retina_59",
+            "name": "Сканируется  фиброваскулярная отслойка ПЭ сетчатки",
+            "sort_index": 48,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 98,
+        "fields": {
+            "label": "koger_mak_retina_83",
+            "name": "Определяется симптом двойного слоя",
+            "sort_index": 49,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 99,
+        "fields": {
+            "label": "koger_mak_retina_60",
+            "name": "Помутнение высокой рефлективности, дающее \"тень\" на глубжележащие слои (субретинальное гемо)",
+            "sort_index": 50,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 100,
+        "fields": {
+            "label": "koger_mak_retina_61",
+            "name": "Сканируется субретинальная жидкость",
+            "sort_index": 51,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 101,
+        "fields": {
+            "label": "koger_mak_retina_62",
+            "name": "Сканируется субретинальный гиперрефлективный материал",
+            "sort_index": 52,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 102,
+        "fields": {
+            "label": "koger_mak_retina_63",
+            "name": "Сканируется разрыв в слое ПЭ сетчатки",
+            "sort_index": 53,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 103,
+        "fields": {
+            "label": "koger_mak_retina_64",
+            "name": "Сканируется гиперрефлективный очаг во внутренних слоях сетчатки",
+            "sort_index": 54,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 104,
+        "fields": {
+            "label": "koger_mak_retina_65",
+            "name": "Сканируется гиперрефлективный очаг в наружных слоях сетчатки",
+            "sort_index": 55,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 105,
+        "fields": {
+            "label": "koger_mak_retina_66",
+            "name": "Сканируется гиперрефлективный очаг над ПЭ",
+            "sort_index": 56,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 106,
+        "fields": {
+            "label": "koger_mak_retina_67",
+            "name": "Сканируется гиперрефлективный очаг в слое ПЭ",
+            "sort_index": 57,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 107,
+        "fields": {
+            "label": "koger_mak_retina_68",
+            "name": "Сканируется гиперрефлективный очаг под ПЭ",
+            "sort_index": 58,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 108,
+        "fields": {
+            "label": "koger_mak_retina_69",
+            "name": "Сканируется гиперрефлективный очаг, дающий \"тень\" на подлежащие слои",
+            "sort_index": 59,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 109,
+        "fields": {
+            "label": "koger_mak_retina_70",
+            "name": "Помутнение низкой рефлективности под отслойкой ПЭ сетчатки",
+            "sort_index": 60,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 110,
+        "fields": {
+            "label": "koger_mak_retina_71",
+            "name": "Помутнение высокой рефлективности под отслойкой ПЭ сетчатки",
+            "sort_index": 61,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 111,
+        "fields": {
+            "label": "koger_mak_retina_72",
+            "name": "Определяется дезорганизация внутренних слоев сетчатки (DRILL)",
+            "sort_index": 62,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 112,
+        "fields": {
+            "label": "koger_mak_retina_73",
+            "name": "Определяется ретиношизис на уровне наружнего плексиформного слоя",
+            "sort_index": 63,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 113,
+        "fields": {
+            "label": "koger_mak_retina_74",
+            "name": "Определяется ретиношизис на уровне внутрненнего ядерного слоя – множественные овальные вертикальные полости (ювенильный X- сцепленный ретиношизис)",
+            "sort_index": 64,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 114,
+        "fields": {
+            "label": "koger_mak_retina_75",
+            "name": "Определяется ретиношизис на уровне внутреннего плексиформного слоя",
+            "sort_index": 65,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 115,
+        "fields": {
+            "label": "koger_mak_retina_76",
+            "name": "Определяется ретиношизис сетчатки – миопический внутренний ретиношизис",
+            "sort_index": 66,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 116,
+        "fields": {
+            "label": "koger_mak_retina_84",
+            "name": "Сканируются гипорефлективные интраретинальные округлые полости с гиперрефлективными стенками (микроаневризмы)",
+            "sort_index": 67,
+            "group": 5
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 117,
+        "fields": {
+            "label": "koger_mak_neurodetach_1",
+            "name": "Хориоидея обычной толщины, хорошо сегментированы слои хориоидальных сосудов",
+            "sort_index": 1,
+            "group": 6
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 118,
+        "fields": {
+            "label": "koger_mak_neurodetach_2",
+            "name": "Хориоидея истончена  и атрофично изменена",
+            "sort_index": 2,
+            "group": 6
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 119,
+        "fields": {
+            "label": "koger_mak_neurodetach_3",
+            "name": "Определяется хориосклероз",
+            "sort_index": 3,
+            "group": 6
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 120,
+        "fields": {
+            "label": "koger_mak_neurodetach_4",
+            "name": "Участок усиления рефлективности в слое хориокапиляров",
+            "sort_index": 4,
+            "group": 6
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 121,
+        "fields": {
+            "label": "koger_mak_neurodetach_5",
+            "name": "Хориоидеа утолщена в проекции макулы",
+            "sort_index": 5,
+            "group": 6
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 122,
+        "fields": {
+            "label": "koger_mak_neurodetach_6",
+            "name": "В слое хориокапилляров определяется гиперрефлективный участок в виде щирокой полосы – пигментный невус",
+            "sort_index": 6,
+            "group": 6
+        }
+    },
+    {
+        "model": "retina_analysis.retinalabelmark",
+        "pk": 123,
+        "fields": {
+            "label": "koger_mak_neurodetach_7",
+            "name": "Определяется обширное гипорефлективное пространство в слое хориоидеа около ДЗН (полость кавитации при высокой миопии)",
+            "sort_index": 7,
+            "group": 6
+        }
+    }
+]

@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     'drf_spectacular',
 
     'accounts',
+    'retina_analysis',
 ]
 
 MIDDLEWARE = [
@@ -151,3 +152,7 @@ SPECTACULAR_SETTINGS = {
     'VERSION': '1.0.0',
     'SERVE_INCLUDE_SCHEMA': False,
 }
+
+FIXTURE_DIRS = [
+    'fixtures',
+]
