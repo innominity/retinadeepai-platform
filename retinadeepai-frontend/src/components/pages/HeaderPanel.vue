@@ -2,10 +2,7 @@
   <header class="bg-white border-b border-gray-100">
     <div class="flex items-center justify-between px-4 py-4 sm:px-6">
       <div class="flex items-center">
-        <button
-          @click="$emit('switchSidebar')"
-          class="text-gray-500 lg:hidden focus:outline-none"
-        >
+        <button v-if="sidebarVisibility" @click="$emit('switchSidebar')" class="text-gray-500 lg:hidden focus:outline-none">
           <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M4 6H20M4 12H20M4 18H11"
@@ -17,7 +14,7 @@
           </svg>
         </button>
 
-        <div class="relative" @click.away="search = ''">
+        <div v-if="searchVisibility" class="relative" @click.away="search = ''">
           <div class="relative mx-4 lg:mx-0">
             <span class="absolute inset-y-0 left-0 flex items-center pl-3">
               <svg class="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none">
@@ -110,7 +107,12 @@
       <div class="flex items-center">
         <div class="relative inline-block">
           <button
-            @click="dropdownOpen = dropdownOpen != DROPDOWN_OPEN_NOTIFICATION? DROPDOWN_OPEN_NOTIFICATION : 0"
+            @click="
+              dropdownOpen =
+                dropdownOpen != DROPDOWN_OPEN_NOTIFICATION ? DROPDOWN_OPEN_NOTIFICATION : 0
+            "
+            
+            @blur="dropdownOpen = 0"
             class="relative z-10 block mx-2 text-gray-700 sm:mx-4 focus:outline-none"
           >
             <svg
@@ -180,7 +182,7 @@
 
         <div class="relative inline-block">
           <button
-            @click="dropdownOpen = dropdownOpen != DROPDOWN_OPEN_AVATAR? DROPDOWN_OPEN_AVATAR : 0"
+            @click="dropdownOpen = dropdownOpen != DROPDOWN_OPEN_AVATAR ? DROPDOWN_OPEN_AVATAR : 0"
             class="relative z-10 flex items-center flex-shrink-0 text-sm text-gray-600 focus:outline-none"
           >
             <img
@@ -199,7 +201,6 @@
             x-transition:leave="transition ease-in duration-75 transform"
             x-transition:leave-start="opacity-100 scale-100"
             x-transition:leave-end="opacity-0 scale-95"
-            @click.away="dropdownOpen = 0"
           >
             <a
               href=""
@@ -219,14 +220,14 @@
             <hr class="border-gray-200" />
 
             <RouterLink
-              :to="{'name': 'profile'}"
+              :to="{ name: 'profile' }"
               class="block px-4 py-2 text-sm text-gray-600 capitalize transition-colors duration-200 transform hover:bg-gray-100"
             >
               Профиль
             </RouterLink>
 
             <RouterLink
-              :to="{'name': 'settings'}"
+              :to="{ name: 'settings' }"
               class="block px-4 py-2 text-sm text-gray-600 capitalize transition-colors duration-200 transform hover:bg-gray-100"
             >
               Настройки
@@ -235,7 +236,7 @@
             <a
               href=""
               class="block px-4 py-2 text-sm text-gray-600 capitalize transition-colors duration-200 transform hover:bg-gray-100"
-              @click="userStore.removeToken();"
+              @click="userStore.removeToken()"
             >
               Выход
             </a>
@@ -247,16 +248,23 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-import router from '@/router';
-import { useUserStore } from '@/stores/user';
+import router from '@/router'
+
+import { ref, defineProps } from 'vue'
+import { useUserStore } from '@/stores/user'
 
 const search = ref<string>('')
 
-const userStore = useUserStore();
+const userStore = useUserStore()
 
 const DROPDOWN_OPEN_NOTIFICATION = 1
 const DROPDOWN_OPEN_AVATAR = 2
+
 const dropdownOpen = ref<Number>(0)
+
+const props = defineProps({
+  searchVisibility: { type: Boolean, default: true },
+  sidebarVisibility: { type: Boolean, default: true },
+})
 
 </script>
