@@ -198,3 +198,150 @@ class RetinaImageCropOCT(models.Model):
 
         thumbnail = File(thumb_io, name=image.name)
         return thumbnail
+    
+
+class RetinaAnalysisTask(models.Model):
+    """Задача анализа сетчатки глаза
+    """
+
+    class TaskStatus(models.IntegerChoices):
+        NOT_STARTED = 1
+        PROCESSED = 2
+        SUCCESS = 3
+        ERROR = 4
+
+    guid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    task_detection = models.ForeignKey(RetinaDetectionTask, on_delete=models.CASCADE)
+    created = models.DateTimeField(auto_now_add=True)
+    status = models.IntegerField(choices=TaskStatus.choices, default=TaskStatus.NOT_STARTED)
+    status_update = models.DateTimeField(auto_now=True)
+    crops = models.ManyToManyField(RetinaImageCropOCT, through="RetinaAnalysisCropTask")
+    is_corrected = models.BooleanField(default=False)
+
+    class Meta:
+        verbose_name = 'Задача анализа сетчатки'
+        verbose_name_plural = 'Задачи анализа сетчатки'
+
+
+class RetinaAnalysisCropTask(models.Model):
+    """Задача анализа сетчатки глаза
+    """
+
+    class TaskStatus(models.IntegerChoices):
+        NOT_STARTED = 1
+        PROCESSED = 2
+        SUCCESS = 3
+        ERROR = 4
+
+    guid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    created = models.DateTimeField(auto_now_add=True)
+    task_analysis = models.ForeignKey(RetinaAnalysisTask, on_delete=models.CASCADE)
+    crop = models.ForeignKey(RetinaImageCropOCT, on_delete=models.CASCADE)
+
+    class Meta:
+        verbose_name = 'Задача анализа среза сетчатки'
+        verbose_name_plural = 'Задачи анализа среза сетчатки'
+
+
+def retina_analysis_crop_image_upload(instance, filename, **kwargs):
+    return '/'.join(['retina_analysis', str(instance.guid), 'crops', f'{instance.guid}.jpg'])
+
+def retina_analysis_crop_thumbnail_upload(instance, filename, **kwargs):
+    return '/'.join(['retina_analysis', str(instance.guid), 'crops', 'thumbnails', f'{instance.guid}.jpg'])
+
+class RetinaAnalysisResult(models.Model):
+    """Результаты анализа среза по метке с изображением
+    """
+    
+    class TaskStatus(models.IntegerChoices):
+        NOT_STARTED = 1
+        PROCESSED = 2
+        SUCCESS = 3
+        ERROR = 4
+
+    guid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    created = models.DateTimeField(auto_now_add=True)
+    label = models.ForeignKey(RetinaLabelMark, on_delete=models.CASCADE)
+    retina_analysis_crop_task = models.ForeignKey(RetinaAnalysisCropTask, on_delete=models.CASCADE)
+    status = models.IntegerField(choices=TaskStatus.choices, default=TaskStatus.NOT_STARTED)
+    status_update = models.DateTimeField(auto_now=True)
+    image = models.ImageField(upload_to=retina_analysis_crop_image_upload, blank=True, null=True)
+    thumbnail = models.ImageField(upload_to=retina_analysis_crop_thumbnail_upload, blank=True, null=True)
+    score = models.FloatField(null=True, blank=True)
+
+    @property
+    def crop_analysis(self):
+        return self.retina_analysis_crop_task.pk
+    
+    @property
+    def crop_id(self):
+        return self.retina_analysis_crop_task.crop.id
+
+    @property
+    def label_mark(self):
+        return self.label.label
+
+    class Meta:
+        verbose_name = 'Результат анализа среза по метке с изображением'
+        verbose_name_plural = 'Результаты анализа среза по метке с изображением'
+
+
+    def get_image(self):
+        if self.image:
+            return settings.BACKEND_URL + self.image.url
+        return ''
+
+    def get_thumbnail(self):
+        if self.thumbnail:
+            return settings.BACKEND_URL + self.thumbnail.url
+        else:
+            if self.image:
+                self.thumbnail = self.make_thumbnail(self.image)
+                self.save()
+                return settings.BACKEND_URL + self.thumbnail.url
+            else:
+                return ''
+    
+    def make_thumbnail(self, image, size=(400, 240)):
+        img = Image.open(image)
+        img.convert('RGB')
+        img.thumbnail(size)
+
+        thumb_io = BytesIO()
+        img.save(thumb_io, 'JPEG', quality=85)
+
+        thumbnail = File(thumb_io, name=image.name)
+        return thumbnail
+    
+
+class RetinaAnalysisCorrectResult(models.Model):
+    """Результаты анализа среза истинные
+    """
+    
+    retina_analysis_crop_task = models.ForeignKey(RetinaAnalysisCropTask, on_delete=models.CASCADE)
+    label_mark = models.ForeignKey(RetinaLabelMark, on_delete=models.CASCADE)
+    created_at = models.DateTimeField(auto_now=True)
+
+    @property
+    def crop_analysis(self):
+        return self.retina_analysis_crop_task.pk
+    
+    @property
+    def crop_id(self):
+        return self.retina_analysis_crop_task.crop_id
+
+    @property
+    def label_id(self):
+        return self.label_mark.id
+    
+    @property
+    def label_key(self):
+        return self.label_mark.label
+    
+    @property
+    def label_name(self):
+        return self.label_mark.name
+    
+    @property
+    def label_group(self):
+        return self.label_mark.group.id
